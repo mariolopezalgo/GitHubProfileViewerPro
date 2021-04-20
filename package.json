@@ -1,0 +1,9 @@
+{
+    "name": "sass_compiler",
+    "scripts": {
+        "sass": "node-sass ./scss/index.scss ./css/index.css & node-sass ./scss/userProfile.scss ./css/userProfile.css"
+    },
+    "devDependencies": {
+        "node-sass": "^5.0.0"
+    }
+}
