@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../js/index.js"></script>
-    <link src="../css/index.css.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <header>
+        <h1>H</h1>
+    </header>
 </head>
-<body>
-    
 
+<body>
+
+    <nav class="navbar navbar-primary navbar-expand-lg fixed-top">
+        <a href="#" class="navbar-brand">Homepage</a>
+        <button class=" btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+                </ul>
+        </div>
+    </nav>
+
+    <div class="container te" style="margin-top:20px;">
+            
+        <form action="userProfile.html">
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="email">Email Address</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="email" required name="Image" minlength="8" maxlength="20">
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="password">Password</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="password" required name="Image" minlength="8" maxlength="20">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-9 offset-sm-3">
+                    <button type="submit" class="btn btn-primary" action="userProfile.html">Lets Go</button>
+                </div>
+            </div>
+            
+        </form>
+        
+    </div>
 
 </body>
+
 </html>
