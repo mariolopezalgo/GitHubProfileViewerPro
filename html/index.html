@@ -8,68 +8,116 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../js/index.js"></script>
     <link rel="stylesheet" href="../css/index.css">
     <header>
-        <h1>H</h1>
+        <h1></h1>
     </header>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-primary navbar-expand-lg fixed-top">
-        <a href="#" class="navbar-brand">Homepage</a>
-        <button class=" btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+    <nav class="navbar navbar-primary bg-white navbar-expand-sm fixed-top">
+        <a id="" href="" class="navbar-brand">Homepage.</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false"
+            aria-controls="navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
                 <li class="navbar-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">About Me.</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">Git Hub.</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">Twitter.</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">Contact.</a>
                 </li>
-                </ul>
+            </ul>
         </div>
     </nav>
 
-    <div class="container te" style="margin-top:20px;">
-            
-        <form action="userProfile.html">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container" style="margin-top:20px;">
+
+        <form id="form" action="userProfile.html">
             <div class="form-group row">
-                <label class="col-sm-3 col-form-label" for="email">Email Address</label>
+                <label class="col-sm-3 col-form-label" for="userName">Username</label>
                 <div class="col-sm-9">
-                    <input type="text" class="form-control" id="email" required name="Image" minlength="8" maxlength="20">
+                    <input type="text" class="form-control" id="userName" required name="Image" minlength="8"
+                        maxlength="20">
                 </div>
             </div>
-            
-            <div class="form-group row">
-                <label class="col-sm-3 col-form-label" for="password">Password</label>
-                <div class="col-sm-9">
-                    <input type="password" class="form-control" id="password" required name="Image" minlength="8" maxlength="20">
-                </div>
-            </div>
-            
+
             <div class="row">
                 <div class="col-sm-9 offset-sm-3">
-                    <button type="submit" class="btn btn-primary" action="userProfile.html">Lets Go</button>
+                    <button type="submit" class="btn btn-success" id="#letsGo" action="userProfile">Lets Go</button>
                 </div>
             </div>
-            
+
         </form>
-        
+
     </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- <div class="container ">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div id="card" class="col">
+                <div class="card text-center" style="width: 18rem;">
+                    <img id="avatar" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Username</h5>
+                        <p id="result" class="card-text">.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="https://github.com/mariolopezalgo" class="card-link">Card link</a>
+                        <a href="https://github.com/mariolopezalgo" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <p id="result">Username:  </p>
+    <p id="pp">Profile Picture:</p>
+    <img id="avatar" src="" alt="..."> -->
+
+    <button id="letsGo1"></button>
 
 </body>
 
