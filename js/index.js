@@ -1,25 +1,12 @@
 $(document).ready(function () {
+  localStorage.clear();
   console.log('Window Ready.');
-  $('#card').hide();
+  $(document).on('mousemove', function (e) {
+    $('#coords').html('    Page Coords: Y: ' + e.clientY + '    X: ' + e.clientX);
+  });
 
-  $("#letsGo").on("click", function(e) {
+  $('#letsGo').on('click', function (e) {
     e.preventDefault();
-    localStorage.clear();
-    var userName = $("#userName").value();
-    localStorage.setItem("userName", userName);
+    console.log(userName);
+  });
 });
-  //   $('#result').toggle();
-  //   $('#avatar').toggle();
-  //   $('#pp').toggle();
-});
-
-
-// $.ajax({
-//   url: 'https://api.github.com/users',
-//   method: 'GET',
-// }).then((res) => {
-//   var data = res;
-//   console.log(data);
-// });
-
-// https://avatars.githubusercontent.com/u/79119798?v=4

@@ -5,53 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
+    <title>User Profile.</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-        <script src="https://code.jquery.com/jquery-3.6.0.js"
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../js/userProfile.js"></script>
     <link rel="stylesheet" href="../css/userProfile.css">
     <header>
-        <h1>User Profile</h1>
+        <h1></h1>
     </header>
 </head>
 
 <body>
 
-    <div class="container ">
-        <div class="row">
-            <div class="col">
+    <nav class="navbar navbar-light bg-danger navbar-expand-md fixed-top">
+        <a id="gitHubUser" href="../html/index.html" class="navbar-brand">GitHub User.</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item">
+                    <a href="https://github.com/mariolopezalgo" class="nav-link">Creator's GitHub.</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="row ml-auto ">
+        <div id="card" class="card bg-danger col-sm-3">
+            <div class="card-body">
+                <img id="avatar" class="card-img-top border" alt="...">
+                <h5 id="user" class="listCont list-group-item card-title border ml-auto">Username: </h5>
+                <p id="id" class="listCont list-group-item border">id: </p>
+                <p id="followers" class="listCont list-group-item border ml-auto">Followers: </p>
+                <p id="following" class="listCont list-group-item border ml-auto">Following: </p>
+                <p id="pRepos" class="listCont list-group-item border ml-auto">Public Repositories: </p>
+                <a id="gitHubProfile" href="" class="listCont card-link list-group-item border ml-auto">See
+                    Profile GitHub</a>
+                <br>
+                <a id="gitHub" href="" class="listCont card-link list-group-item border ml-auto">Login to
+                    GitHub</a>
             </div>
-            <div id="card" class="col">
-                <div class="card text-center" style="width: 18rem;">
-                    <img id="avatar" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Username</h5>
-                        <p id="result" class="card-text">.</p>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="https://github.com/mariolopezalgo" class="card-link">Card link</a>
-                        <a href="https://github.com/mariolopezalgo" class="card-link">Another link</a>
-                    </div>
+        </div>
+        <div class="card-body">
+            <div id="toggleR" class="bg-danger">
+                <div>
+                    <h2 class="listCont list-group-item card-title col-sm border d-flex justify-content-between align">
+                        See Repositories: <span id="badge" class="badge badge-danger badge-pill"></span></h2>
                 </div>
-            </div>
-            <div class="col">
+                <div id="repos">
+                    <br>
+                </div>
             </div>
         </div>
     </div>
+
+    <br>
+    <br>
+    <br>
 
 </body>
 

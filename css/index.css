@@ -1,4 +1,9 @@
 body {
-  font: 100% Helvetica, sans-serif;
   color: greenyellow;
   background: cyan url(../images/shutterstock_407554567.jpg); }
+
+.navcolor {
+  color: greenyellow; }
+
+#user, #coords {
+  color: red; }
