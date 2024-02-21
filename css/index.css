@@ -1,9 +1,10 @@
 body {
   color: greenyellow;
-  background: cyan url(../images/shutterstock_407554567.jpg); }
-
-.navcolor {
-  color: greenyellow; }
+  background: cyan url(../images/shutterstock_407554567.jpg);
+}
 
 #user, #coords {
-  color: red; }
+  color: red;
+}
+
+/*# sourceMappingURL=index.css.map */
